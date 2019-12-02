@@ -115,7 +115,7 @@
 					</style>						
 					<div class="container">							
 						<div class="col">
-						<h6 class="fragment">Quebra dos dados (striping)</h6>
+						<h6 class="fragment">Quebra dos dados (stripping)</h6>
 						<p class="fragment">Características</p>
 						<p class="fragment">Aumento da velocidade</p>
 						<p class="fragment">Capacidade de armazenamento?</p>
@@ -123,7 +123,7 @@
 					</div>
 
 					<div class="col">
-						<img src="https://www.lacie.com/files/lacie-content/manuals/lacie-raid-manager-user-manual/_shared/images/raid-0.jpg" alt="Raid 0" style="width:500px;height:500px;">
+						<img src="https://www.lacie.com/files/lacie-content/manuals/lacie-raid-manager-user-manual/_shared/images/raid-0.jpg" alt="Raid 0" style="width:600px;height:400px;">
 						</div>						
 					</div>
 				</section>
@@ -193,20 +193,16 @@
 								
 								<div class="col">
 									<ul>
-										<li class="fragment">USB</li>
-										<li class="fragment">Botão de reset</li>
-										<li class="fragment">Alimentação</li>
-										<li class="fragment">Entradas e saídas digitais</li>
-										<li class="fragment">Alimentação 5V, 3.3V e GND</li>
-										<li class="fragment">Entradas</li>
-										<li class="fragment">LEDs Tx/Rx</li>
-										<li class="fragment">LED embarcado</li>
-										<li class="fragment">Eletrônica auxiliar</li>									
+										<li class="fragment">Divide e duplica!</li>
+										<li class="fragment">Vantagens: Une disponibilidade e velocidade</li>
+										<li class="fragment">Desvantagens: Alto custo</li>									
+										<li class="fragment">Requer pelo menos 4 discos</li>
+										<li class="fragment">Melhor performance do que soluções envolvendo paridade</li>
 									</ul>
 								</div>
 
 								<div class="col">
-										<img src="https://raw.githubusercontent.com/jp-guimaraes/intro_arduino/master/assets/uno_closeup.png" alt="Arduino uno" style="width:500px;height:500px;">
+										<img src="https://raw.githubusercontent.com/jp-guimaraes/intro_arduino/master/assets/figs/raid0p1.png" alt="Arduino uno" style="width:500px;height:500px;">
 									</div>
 							
 							</div>
@@ -227,20 +223,16 @@
 									
 									<div class="col">
 										<ul>
-										<li class="fragment">USB</li>
-										<li class="fragment">Botão de reset</li>
-										<li class="fragment">Alimentação</li>
-										<li class="fragment">Entradas e saídas digitais</li>
-										<li class="fragment">Alimentação 5V, 3.3V e GND</li>
-										<li class="fragment">Entradas</li>
-										<li class="fragment">LEDs Tx/Rx</li>
-										<li class="fragment">LED embarcado</li>
-										<li class="fragment">Eletrônica auxiliar</li>									
+											<li class="fragment">Requer pelo menos 4 discos</li>
+											<li class="fragment">Botão de reset</li>
+											<li class="fragment">Alimentação</li>		
+											<li class="fragment">Maior tolerância a falhas do que o RAID 0+1</li>
+											<li class="fragment">Dois discos podem ser perdidos!</li>															
 										</ul>
 									</div>
 
 									<div class="col">
-										<img src="https://raw.githubusercontent.com/jp-guimaraes/intro_arduino/master/assets/uno_closeup.png" alt="Arduino uno" style="width:500px;height:500px;">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSE2F7YKcKJTF93aSw64v8HMoGRyxFWqKGNPhY1aEoxKuIiLBYJ" alt="RAID" style="width:500px;height:500px;">
 									</div>
 							
 							</div>
@@ -274,11 +266,35 @@
 						<h3>Um pouco mais sobre estratégias usando paridade</h3>
 						<p class="fragment">RAID 5</p>
 						<p class="fragment">Paridade distribuída pelos discos</p>
+						<p class="fragment">Capacidade (N-1)*s</p>
 						<p class="fragment">RAID 6</p>
-						<p class="fragment">Duas informações de paridade distribuídas pelos discos</p>						
+						<p class="fragment">Duas informações de paridade distribuídas pelos discos</p>		
+						<p class="fragment">Mínimo de 4 discos</p>
+						<p class="fragment">Capacidade (N-2)*s</p>		
 					</section>
 				</section>
 
+				<section>
+					<section>
+						<h1>Quiz!</h1>
+						<h3>Revisão!</h3>
+					</section>
+					<section>
+						<h1>Quiz!</h1>
+						<img src="https://raw.githubusercontent.com/jp-guimaraes/intro_arduino/master/assets/figs/mirroring.png" alt="quiz1" style="width:500px;height:500px;">
+						<p class="fragment">Qual o conceito associado?</p>
+						<p class="fragment">Quais as vantagens e desvantagens desse tipo de RAID?</p>
+					</section>
+					<section>
+						<h1>Quiz!</h1>
+						<img src="https://raw.githubusercontent.com/jp-guimaraes/intro_arduino/master/assets/figs/stripping.png" alt="quiz1" style="width:500px;height:500px;">
+						<p class="fragment">Qual o conceito associado?</p>
+						<p class="fragment">Quais as vantagens e desvantagens desse tipo de RAID?</p>
+					</section>
+					
+				</section>
+
+				
 
 				<section>
 					<h4>Dúvidas, críticas, sugestões?</h4>
@@ -314,4 +330,5 @@
 
 	</body>
 </html>
+
 
