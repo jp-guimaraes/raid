@@ -33,7 +33,7 @@
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 	</head>
-	<style>
+	<!-- <style>
 		* {
 		  box-sizing: border-box;
 		}
@@ -47,7 +47,7 @@
 		  flex: 33.33%;
 		  padding: 5px;
 		}
-		</style>
+	</style> -->
 	<body>
 		<div class="reveal">
 			<div class="slides">
@@ -84,8 +84,8 @@
 					<h6> Redundant Array of Inexpensive Disks</h6>
 					<p class="fragment">Redundant Array of Independent Disks</p>
 					<p class="fragment">Combina discos (memória secundária) para prover redundância e/ou ganho de desempenho a sistemas</p>
-					<p class="fragment">Proposto em 1987 por David Patterson, Garth A. Gibson e Randy Katz (University of California - Berkeley)</p>
-					<p class="fragment"> <a href="https://www.cs.cmu.edu/~garth/RAIDpaper/Patterson88.pdf">link para o artigo original</a></p>
+					<p class="fragment">Proposto em 1987 por David Patterson, Garth A. Gibson e Randy Katz (University of California - Berkeley) <a href="https://www.cs.cmu.edu/~garth/RAIDpaper/Patterson88.pdf">baixe aqui </a></p>
+					<p class="fragment">Implementação Hardware/Software</a></p>
 				</section>
 
 				<section>
@@ -105,11 +105,31 @@
 
 				<section>
 					<h3>RAID 0</h3>
-					<h6 class="fragment">Quebra dos dados (striping)</h6>
-					<p class="fragment">Características</p>
-					<p class="fragment">Aumento da velocidade</p>
-					<p class="fragment">Capacidade de armazenamento?</p>
-					<p class="fragment">Aumento da disponibilidade?</p>
+					<style>
+						.container{
+							display: flex;
+						}
+						.col{
+							flex: 1;
+						}
+					</style>						
+					<div class="container">							
+						<div class="col">
+						<h6 class="fragment">Quebra dos dados (striping)</h6>
+						<p class="fragment">Características</p>
+						<p class="fragment">Aumento da velocidade</p>
+						<p class="fragment">Capacidade de armazenamento?</p>
+						<p class="fragment">Aumento da disponibilidade?</p>						
+					</div>
+
+					<div class="col">
+						<img src="https://www.lacie.com/files/lacie-content/manuals/lacie-raid-manager-user-manual/_shared/images/raid-0.jpg" alt="Raid 0" style="width:500px;height:500px;">
+						</div>						
+					</div>
+				</section>
+
+				<section>
+					<h1>QUIZ!</h1>
 					<p class="fragment">O que acontece quando um dos discos falha?</p>
 				</section>
 
@@ -122,14 +142,142 @@
 
 				<section>
 					<h3>RAID 1</h3>
-					<h6 class="fragment">Espelhamento dos dos dados (mirroring)</h6>
-					<p class="fragment">Características</p>
-					<p class="fragment">Aumento da velocidade?</p>
-					<p class="fragment">Aumento da disponibilidade</p>
-					<p class="fragment">Capacidade de armazenamento?</p>
-					<p class="fragment">O que acontece quando um dos discos falha?</p>
+					<style>
+						.container{
+							display: flex;
+						}
+						.col{
+							flex: 1;
+						}
+					</style>
+					<div class="container">							
+						<div class="col">
+						<h6 class="fragment">Espelhamento dos dos dados (mirroring)</h6>
+						<p class="fragment">Características</p>
+						<p class="fragment">Aumento da velocidade?</p>
+						<p class="fragment">Aumento da disponibilidade</p>						
+					</div>
+
+					<div class="col">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_a0vCChjrebA9aWhF0gpSQc4Q9eBUxHBubr8iZ-5Emsil-87Y&s" alt="Arduino uno" style="width:500px;height:500px;">
+						</div>						
+					</div>		
+					
+					
 				</section>
 
+				<section>
+					<h1>QUIZ!</h1>
+					<p class="fragment">Capacidade de armazenamento?</p>				
+				</section>
+
+				<section>
+					<section>
+						<h3>Soluções híbridas</h3>
+						<p class="fragment">Combina a confiabilidade do RAID 1 com o ganho de desempenho do RAID 0</p>
+						<p class="fragment">RAID 0+1</p>
+						<p class="fragment">RAID 1+0</p>						
+					</section>
+					<section>
+						<h3>RAID 0 + 1</h3>
+						<style>
+							.container{
+								display: flex;
+							}
+							.col{
+								flex: 1;
+							}
+							</style>
+							
+							<div class="container">							
+								
+								<div class="col">
+									<ul>
+										<li class="fragment">USB</li>
+										<li class="fragment">Botão de reset</li>
+										<li class="fragment">Alimentação</li>
+										<li class="fragment">Entradas e saídas digitais</li>
+										<li class="fragment">Alimentação 5V, 3.3V e GND</li>
+										<li class="fragment">Entradas</li>
+										<li class="fragment">LEDs Tx/Rx</li>
+										<li class="fragment">LED embarcado</li>
+										<li class="fragment">Eletrônica auxiliar</li>									
+									</ul>
+								</div>
+
+								<div class="col">
+										<img src="https://raw.githubusercontent.com/jp-guimaraes/intro_arduino/master/assets/uno_closeup.png" alt="Arduino uno" style="width:500px;height:500px;">
+									</div>
+							
+							</div>
+						</section>
+
+						<section>
+							<h3>RAID 1+0</h3>
+							<style>
+								.container{
+									display: flex;
+								}
+								.col{
+									flex: 1;
+								}
+								</style>
+								
+								<div class="container">							
+									
+									<div class="col">
+										<ul>
+										<li class="fragment">USB</li>
+										<li class="fragment">Botão de reset</li>
+										<li class="fragment">Alimentação</li>
+										<li class="fragment">Entradas e saídas digitais</li>
+										<li class="fragment">Alimentação 5V, 3.3V e GND</li>
+										<li class="fragment">Entradas</li>
+										<li class="fragment">LEDs Tx/Rx</li>
+										<li class="fragment">LED embarcado</li>
+										<li class="fragment">Eletrônica auxiliar</li>									
+										</ul>
+									</div>
+
+									<div class="col">
+										<img src="https://raw.githubusercontent.com/jp-guimaraes/intro_arduino/master/assets/uno_closeup.png" alt="Arduino uno" style="width:500px;height:500px;">
+									</div>
+							
+							</div>
+						</section>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Soluções usando checagem de erro</h3>
+						<p>RAID 2</p>
+						<p>Discos rígidos antigos</p>
+						<p>Obsoleto</p>
+
+						<h3>Exemplos de soluções usando a estratégia de paridade</h3>
+						<ul>						
+							<li>RAID 3</li>
+							<li>RAID 4</li>
+							<li>RAID 5</li>
+							<li>RAID 6</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Um pouco mais sobre estratégias usando paridade</h3>
+						<p>RAID 3</p>
+						<p>Disco exclusivo para paridade</p>
+						<p>Mínimo de 3 discos</p>
+					</section>
+					<section>
+						<h3>Um pouco mais sobre estratégias usando paridade</h3>
+						<p>RAID 5</p>
+						<p>Paridade distribuída pelos discos</p>
+						<p>RAID 6</p>
+						<p>Duas informações de paridade distribuídas pelos discos</p>						
+					</section>
+				</section>
 
 
 				<section>
